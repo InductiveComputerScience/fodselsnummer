@@ -1,0 +1,14 @@
+{
+  "name": "foedselsnummer",
+  "version": "0.1.2",
+  "organization namespace": "no.inductive.libraries",
+  "scientific namespace": "other.government.norway.personalidentificationnumber",
+  "imports": [
+    ["", "no.inductive.idea10.programs", "references", "0.1.0"],
+    ["", "no.inductive.idea10.programs", "numbers", "0.1.1"],
+    ["datetime", "no.inductive.idea10.programs", "datetime", "0.1.1"]
+  ],
+  "development imports": [
+    ["", "no.inductive.idea10.programs", "testing", "0.1.1"]
+  ]
+}
