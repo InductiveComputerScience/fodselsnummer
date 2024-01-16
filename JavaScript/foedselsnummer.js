@@ -2369,3 +2369,4 @@ function ReverseNumberArray(array){
   }
 }
 
+console.log(test());
