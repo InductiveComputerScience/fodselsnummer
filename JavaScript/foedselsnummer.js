@@ -87,7 +87,7 @@ function getDateFromNorwegianPersonalIdentificationNumber(fnummer, failures){
     }else if(individnummer >= 900 && individnummer <= 999 && year >= 40 && year <= 99){
       year = year + 1900;
     }else if(individnummer >= 500 && individnummer <= 999 && year >= 0 && year <= 39){
-      year = year + 1900;
+      year = year + 2000;
     }else{
       failures.doubleValue = failures.doubleValue + 1;
     }
