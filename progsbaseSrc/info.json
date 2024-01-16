@@ -1,14 +1,16 @@
 {
   "name": "foedselsnummer",
-  "version": "0.1.2",
+  "version": "0.2.2",
   "organization namespace": "no.inductive.libraries",
   "scientific namespace": "other.government.norway.personalidentificationnumber",
   "imports": [
-    ["", "no.inductive.idea10.programs", "references", "0.1.0"],
-    ["", "no.inductive.idea10.programs", "numbers", "0.1.1"],
-    ["datetime", "no.inductive.idea10.programs", "datetime", "0.1.1"]
+    ["", "no.inductive.idea10.programs", "references", "0.1.5"],
+    ["", "no.inductive.idea10.programs", "datetime", "0.1.17"],
+    ["char", "no.inductive.libraries", "Characters", "0.1.4"]
   ],
   "development imports": [
-    ["", "no.inductive.idea10.programs", "testing", "0.1.1"]
-  ]
+    ["", "no.inductive.idea10.programs", "testing", "0.1.8"]
+  ],
+  "private": false,
+  "ownerCustomerId": "Inductive AS"
 }
