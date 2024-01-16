@@ -14,7 +14,7 @@ Norwegian Personal Identification Numbers is called fodelsnummer or fødselsnumm
 
 The library has been made with [progsbase](https://www.progsbase.com), a tool for creating rot-resistant programs that are translatable to many programming languages.
 
-The library can also be browsed and tested on the [progsbase repository's fodselsnummer page](https://repo.progsbase.com/repoviewer/no.inductive.libraries/foedselsnummer/0.1.2).
+The library can also be browsed and tested on the [progsbase repository's fodselsnummer page](https://repo.progsbase.com/repoviewer/no.inductive.libraries/foedselsnummer/0.2.2).
 
 ![progsbase logo](/docs/images/progsbase-logo.png)
 
@@ -25,17 +25,19 @@ For more information about progsbase, check out: [progsbase.com](https://www.pro
 The library has the same interface in all programming languages.
 
 ### Validate
-`boolean isValidNorwegianPersonalIdentificationNumber(char [] fnummer)`
+`boolean isValidNorwegianPersonalIdentificationNumber(char [] fnummer, StringReference message)`
 
-The function takes a string as input, containing a norwegian personal identification number.
+The function takes two inputs: a string, containing a norwegian personal identification number, and a string reference, that will get an error message.
 
-The output is a boolean, true if the number is valid and false if not.
+The output is a boolean, true if the number is valid and false if not. If the return is false, message is set to a string explaining the reason.
 
 ### Extract Birth Date
-`datetimeDate getDateFromNorwegianPersonalIdentificationNumber(char[] fnummer, DoubleReference failures)`
+`boolean GetDateFromNorwegianPersonalIdentificationNumber(char[] fnummer, DateReference dateRef, StringReference message)`
 
-The function takes a string as input, containing a norwegian personal identification number and a reference to a double.
+The function takes a string as input, containing a norwegian personal identification number, a reference to a date and a reference to a string.
 
-The output is a structure with three fields: year, month, day.
+The function returns true if successfull and false if not.
 
-If the function fails, failures.doubleValue is a positive non-zero value.
+If the function succeeds, the date in the date reference is set with three fields: year, month, day.
+
+If the function fails, the string reference message gets an error message.
